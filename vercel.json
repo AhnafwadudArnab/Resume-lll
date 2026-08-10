@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/resume.html"
+    },
+    {
+      "source": "/resume",
+      "destination": "/resume.html"
+    }
+  ]
+}
