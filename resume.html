@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Ahnaf Wadud Arnab — Flutter Developer Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ahnaf Wadud Arnab | Flutter Developer Resume</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/dreampulse/computer-modern-web-font@master/fonts.css"
@@ -14,122 +14,143 @@
       }
       @page {
         size: A4;
-        margin: 13mm 16mm;
+        margin: 10mm 12mm;
       }
       html,
       body {
         margin: 0;
         padding: 0;
-        background: #1a1a1a;
-        color: #111;
-        font-family:
-          "Computer Modern", "Latin Modern", "Times New Roman", serif;
-        font-size: 13px;
-        line-height: 1.38;
+        background: #e9edf2;
+        color: #26313d;
+        font-family: Inter, "Segoe UI", Arial, Helvetica, sans-serif;
+        font-size: 11.4px;
+        line-height: 1.28;
         -webkit-font-smoothing: antialiased;
       }
       .page {
         width: 210mm;
         min-height: 297mm;
-        margin: 40px auto;
-        padding: 48px 64px;
+        margin: 24px auto;
+        padding: 20px 42px;
         background: #fff;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.55);
+        box-shadow: 0 12px 34px rgba(31, 49, 69, 0.16);
       }
       .header {
         text-align: center;
-        margin-bottom: 6px;
+        margin-bottom: 7px;
+        padding-bottom: 7px;
+        border-bottom: 1px solid #d7e0e8;
       }
       h1 {
         margin: 0 0 2px;
-        font-size: 28px;
-        letter-spacing: 1px;
-        line-height: 1.12;
+        color: #172b46;
+        font-size: 27px;
+        letter-spacing: 0.2px;
+        line-height: 1.1;
       }
       .subtitle {
-        font-size: 14px;
-        font-variant: small-caps;
-        letter-spacing: 1.5px;
-        color: #333;
-        margin-bottom: 6px;
+        color: #2d6a9f;
+        font-size: 12.2px;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+        margin-bottom: 5px;
       }
       .contact-line {
-        font-size: 13px;
-        line-height: 1.45;
+        color: #526171;
+        font-size: 10.7px;
+        line-height: 1.3;
       }
       .contact-item {
         display: inline-flex;
         align-items: center;
-        gap: 4px;
+        gap: 3px;
         white-space: nowrap;
       }
-      .contact-line a,
-      .links a,
-      .profile-list a {
-        color: #111;
+      .contact-icon {
+        width: 12px;
+        height: 12px;
+        flex: 0 0 12px;
+        fill: none;
+        stroke: #2d6a9f;
+        stroke-width: 1.7;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        vertical-align: -2px;
+      }
+      a {
+        color: #245f91;
         text-decoration: none;
       }
       .separator {
-        margin: 0 6px;
-        color: #555;
+        margin: 0 5px;
+        color: #9aa8b5;
       }
       .section {
-        margin-top: 9px;
+        margin-top: 7px;
       }
       .section-title {
-        margin: 0 0 4px;
-        padding-bottom: 1px;
-        border-bottom: 1.4px solid #111;
-        font-size: 13.2px;
-        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        margin: 0 0 3px;
+        color: #172b46;
+        font-size: 11.4px;
+        font-weight: 750;
+        letter-spacing: 1.05px;
+        text-transform: uppercase;
       }
-      .summary p {
+      .section-title::before {
+        width: 4px;
+        height: 14px;
+        flex: 0 0 4px;
+        border-radius: 2px;
+        background: #2d6a9f;
+        content: "";
+      }
+      .summary p,
+      .lang-line {
         margin: 0;
       }
-      .skills-table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-      .skills-table td {
-        padding: 1px 0;
-        vertical-align: top;
-      }
-      .skills-table td:first-child {
-        width: 174px;
-        padding-right: 9px;
-        font-weight: 700;
-        white-space: nowrap;
+      .skill-line {
+        margin: 0 0 2px;
       }
       .project {
-        margin-bottom: 6px;
+        margin-bottom: 5px;
         break-inside: avoid;
         page-break-inside: avoid;
       }
       .project-title {
-        font-size: 13px;
+        color: #172b46;
+        font-size: 11.8px;
+        line-height: 1.25;
         font-weight: 700;
       }
       .tech {
         font-weight: 400;
+        color: #657687;
         font-style: italic;
       }
-      .project ul,
-      .exp-item ul {
+      ul {
         margin: 1px 0 0 16px;
         padding: 0;
       }
-      .project li {
+      li {
         margin: 0 0 1px;
+      }
+      .project li {
         list-style: none;
       }
       .project li::before {
-        content: "– ";
+        color: #2d6a9f;
+        content: "• ";
       }
       .links {
-        margin: 1px 0 0 16px;
-        font-size: 11.7px;
+        margin: 2px 0 0 16px;
+        color: #526171;
+        font-size: 10.2px;
       }
-      .exp-item {
+      .exp-item,
+      .edu-item {
         break-inside: avoid;
         page-break-inside: avoid;
       }
@@ -138,41 +159,34 @@
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        gap: 12px;
+        gap: 10px;
       }
       .role,
       .degree {
+        color: #172b46;
         font-weight: 700;
       }
       .date,
       .edu-right {
-        color: #333;
+        color: #657687;
         white-space: nowrap;
       }
       .exp-company,
       .school {
+        color: #657687;
         font-style: italic;
         margin: 1px 0;
       }
-      .exp-item li {
-        margin: 0 0 1px;
-      }
       .edu-item {
-        margin-bottom: 4px;
-        break-inside: avoid;
-        page-break-inside: avoid;
+        margin-bottom: 3px;
       }
       .bullet-list,
       .profile-list {
-        margin: 0 0 0 17px;
-        padding: 0;
+        margin: 0 0 0 16px;
       }
       .bullet-list li,
       .profile-list li {
-        margin-bottom: 2px;
-      }
-      .lang-line {
-        margin: 0;
+        margin-bottom: 1px;
       }
       @media print {
         html,
@@ -186,136 +200,133 @@
           padding: 0;
           box-shadow: none;
         }
+        a { color: #111; text-decoration: none; }
       }
     </style>
   </head>
   <body>
     <main class="page">
-      <div class="header">
+      <header class="header">
         <h1>Ahnaf Wadud Arnab</h1>
-        <div class="subtitle">Flutter Developer | Frontend Developer</div>
+        <div class="subtitle">
+          Flutter Developer | Frontend Developer | Junior Software Developer
+        </div>
         <div class="contact-line">
-          <span class="contact-item">📞 +8801996242974</span
-          ><span class="separator">|</span
-          ><span class="contact-item"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="13"
-              height="13"
-              viewBox="0 0 24 24"
-              fill="black"
-            >
-              <path
-                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
-              /></svg
+          <span class="contact-item"
+            ><svg class="contact-icon" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92z" /></svg
+            >+8801996242974</span
+          ><span class="separator">|</span>
+          <span class="contact-item"
+            ><svg class="contact-icon" aria-hidden="true" viewBox="0 0 24 24">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="m3 7 9 6 9-6" /></svg
             ><a href="mailto:ahanafwadudarnab@gmail.com"
               >ahanafwadudarnab@gmail.com</a
             ></span
-          ><span class="separator">|</span
-          ><span class="contact-item"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="13"
-              height="13"
-              viewBox="0 0 24 24"
-              fill="black"
-            >
-              <path
-                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.468-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 0 1 3.003-.404c1.02.005 2.047.138 3.003.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.652.242 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.61-2.804 5.625-5.475 5.92.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z"
-              /></svg
-            ><a href="https://github.com/AhnafwadudArnab"
-              >github.com/AhnafwadudArnab</a
-            ></span
-          ><span class="separator">|</span
-          ><span class="contact-item"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="black"
-            >
-              <path
-                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-              /></svg
+          ><span class="separator">|</span>
+          <span class="contact-item"
+            ><svg class="contact-icon" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" /></svg
             ><a href="https://www.linkedin.com/in/ahnaf-wadud-arnab-076657245/"
               >linkedin.com/in/ahnaf-wadud-arnab</a
             ></span
-          ><span class="separator">|</span
-          ><span class="contact-item"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="13"
-              height="13"
-              viewBox="0 0 24 24"
-              fill="black"
-            >
-              <path
-                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-              /></svg
-            >Zamzam Tower, Middle Badda, Dhaka 1212</span
+          ><span class="separator">|</span>
+          <span class="contact-item"
+            ><svg class="contact-icon" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M9 19c-4.3 1.4-4.3-2.4-6-3m12 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 19 4.77 5.07 5.07 0 0 0 18.91 1S17.73.65 15 2.48a13.4 13.4 0 0 0-6 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" /></svg
+            ><a href="https://github.com/AhnafwadudArnab"
+              >github.com/AhnafwadudArnab</a
+            ></span
+          ><span class="separator">|</span>
+          <span class="contact-item"
+            ><svg class="contact-icon" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" />
+              <circle cx="12" cy="10" r="2.5" /></svg
+            >Dhaka, Bangladesh</span
           >
         </div>
-      </div>
+      </header>
       <section class="section summary">
         <h2 class="section-title">Summary</h2>
         <p>
-          CSE student and Flutter Developer with hands-on experience building
-          mobile and web applications using Flutter, Dart, REST APIs, Firebase,
-          MySQL, and Node.js. Experienced in responsive UI development, API
-          integration, and application workflows. Seeking a Flutter Developer
-          internship or junior role to apply my skills in Flutter, Dart, API
-          integration, and Firebase while growing as a professional mobile
-          application developer.
+          CSE student and Flutter Developer with hands-on experience in mobile
+          application development using Flutter, Dart, REST APIs, Firebase,
+          MySQL, and Node.js. Develops responsive UI, integrates APIs, and
+          applies state management to deliver maintainable application
+          workflows.
         </p>
       </section>
       <section class="section">
         <h2 class="section-title">Technical Skills</h2>
-        <table class="skills-table">
-          <tr>
-            <td>Languages:</td>
-            <td>Dart, C/C++, Java,Node-Js</td>
-          </tr>
-          <tr>
-            <td>Mobile:</td>
-            <td>
-              Flutter, Responsive UI, Component-Based UI, Material Design,
-              Navigation
-            </td>
-          </tr>
-          <tr>
-            <td>State &amp; APIs:</td>
-            <td>
-              GetX, Provider, REST API Integration, JSON Parsing, Firebase
-              Authentication
-            </td>
-          </tr>
-          <tr>
-            <td>Database:</td>
-            <td>MySQL, Supabase, Firebase / Firestore</td>
-          </tr>
-          <tr>
-            <td>UI/UX:</td>
-            <td>Figma, Wireframing, User Flow Design, Mobile-First Design</td>
-          </tr>
-          <tr>
-            <td>Tools:</td>
-            <td>Git, GitHub, Android Studio, Postman, VS Code, Vercel</td>
-          </tr>
-        </table>
+        <p class="skill-line">
+          <strong>Languages:</strong> Dart, C/C++, Java, Node.js
+        </p>
+        <p class="skill-line">
+          <strong>Frameworks &amp; Mobile:</strong> Flutter, Responsive UI,
+          Component-Based UI, Material Design, Navigation
+        </p>
+        <p class="skill-line">
+          <strong>State Management &amp; APIs:</strong> GetX, Provider, REST API
+          Integration, JSON Parsing, Firebase Authentication
+        </p>
+        <p class="skill-line">
+          <strong>Databases &amp; Backend:</strong> MySQL, Supabase, Firebase,
+          Cloud Firestore
+        </p>
+        <p class="skill-line">
+          <strong>UI/UX:</strong> Figma, Wireframing, User Flow Design,
+          Mobile-First Design
+        </p>
+        <p class="skill-line">
+          <strong>Tools &amp; Development:</strong> Git, GitHub, Android Studio,
+          Postman, VS Code, Vercel, MVC
+        </p>
+      </section>
+      <section class="section">
+        <h2 class="section-title">Experience</h2>
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="role">Frontend Developer</span
+            ><span class="date">June 2024 - Present</span>
+          </div>
+          <div class="exp-company">Independent &amp; Freelance Development</div>
+          <ul>
+            <li>
+              Developed responsive Flutter applications for food delivery,
+              railway booking, e-commerce, and utility workflows, including
+              clear navigation and user flows.
+            </li>
+            <li>
+              Integrated REST APIs and Firebase services for authentication,
+              data rendering, and interactive application workflows.
+            </li>
+            <li>
+              Implemented reusable UI components, forms, responsive layouts,
+              validation feedback, and loading states to improve consistency and
+              usability.
+            </li>
+            <li>
+              Applied MVC structure and Provider-based state management to keep
+              Flutter codebases organized and maintainable.
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="section">
         <h2 class="section-title">Projects</h2>
         <article class="project">
           <div class="project-title">
-            1. Amar Rail Sheba — Railway Management System
+            Amar Rail Sheba | Railway Management System
             <span class="tech">| Flutter, REST APIs, Node.js, MySQL</span>
           </div>
           <ul>
             <li>
-              Built a Flutter railway management and ticket booking application
-              with train search, route information, schedules, seat selection,
-              and reservation workflows.
+              Developed a railway management and ticket booking application with
+              train search, routes, schedules, seat selection, and reservation
+              workflows.
             </li>
             <li>
               Integrated REST APIs with Node.js and MySQL for train, schedule,
@@ -335,17 +346,17 @@
         </article>
         <article class="project">
           <div class="project-title">
-            2. ElectroZoneBD — Online Electronics Shop
+            ElectroZoneBD | Online Electronics Shop
             <span class="tech">| Flutter, PHP, MySQL, REST APIs</span>
           </div>
           <ul>
             <li>
-              Built a Flutter-based e-commerce application with product
-              browsing, cart management, and order placement workflows.
+              Developed a Flutter e-commerce application with product browsing,
+              cart management, and order placement workflows.
             </li>
             <li>
-              Integrated REST APIs with PHP/MySQL backend services for product
-              and order data.
+              Integrated REST APIs with PHP and MySQL backend services for
+              product and order data.
             </li>
           </ul>
           <div class="links">
@@ -359,14 +370,14 @@
         </article>
         <article class="project">
           <div class="project-title">
-            3. Foodash — Food Delivery App
+            Foodash | Food Delivery App
             <span class="tech">| Flutter, Firebase, REST APIs</span>
           </div>
           <ul>
             <li>
-              Built a Flutter food delivery application with customer workflows
-              including product discovery, cart management, checkout, and order
-              tracking.
+              Developed a Flutter food delivery application with product
+              discovery, cart management, checkout, and order tracking
+              workflows.
             </li>
             <li>
               Integrated Firebase and REST APIs with reusable UI components and
@@ -383,17 +394,17 @@
         </article>
         <article class="project">
           <div class="project-title">
-            4. Face Detection App
+            Face Detection App | Camera-Based Application
             <span class="tech">| Flutter, REST APIs, Python, OpenCV</span>
           </div>
           <ul>
             <li>
-              Built the Flutter frontend for a camera-based face detection
-              application with image capture and prediction result screens.
+              Developed the Flutter frontend with image capture and prediction
+              result screens for a camera-based face detection application.
             </li>
             <li>
-              Connected the mobile interface to REST API responses, supporting
-              clear capture, processing, and feedback states.
+              Connected the mobile interface to REST API responses with clear
+              capture, processing, and feedback states.
             </li>
           </ul>
           <div class="links">
@@ -405,36 +416,6 @@
         </article>
       </section>
       <section class="section">
-        <h2 class="section-title">Experience</h2>
-        <div class="exp-item">
-          <div class="exp-header">
-            <span class="role">Frontend Developer</span
-            ><span class="date">June-2024 – Present</span>
-          </div>
-          <div class="exp-company">Independent &amp; Freelance Development</div>
-          <ul>
-            <li>
-              Delivered responsive Flutter applications across food delivery,
-              railway booking, e-commerce, and utility domains, with a focus on
-              clear UI, smooth navigation, and reliable user flows.
-            </li>
-            <li>
-              Integrated REST APIs and Firebase services for authentication,
-              data rendering, and interactive application workflows.
-            </li>
-            <li>
-              Built reusable UI components, forms, loading states, validation
-              feedback, and responsive layouts to improve consistency and
-              usability.
-            </li>
-            <li>
-              Applied MVC structure and Provider-based state management to keep
-              Flutter codebases organized and maintainable.
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="section">
         <h2 class="section-title">Education</h2>
         <div class="edu-item">
           <div>
@@ -443,14 +424,14 @@
               United International University (UIU), Dhaka
             </div>
           </div>
-          <div class="edu-right">2022 – Present</div>
+          <div class="edu-right">2022 - Present</div>
         </div>
         <div class="edu-item">
           <div>
             <div class="degree">Higher Secondary Certificate (Science)</div>
             <div class="school">Amirjan College, Dhaka</div>
           </div>
-          <div class="edu-right">2020 – 2021</div>
+          <div class="edu-right">2020 - 2021</div>
         </div>
         <div class="edu-item">
           <div>
@@ -463,14 +444,18 @@
         </div>
       </section>
       <section class="section">
-        <h2 class="section-title">Certifications</h2>
+        <h2 class="section-title">Certifications &amp; Achievements</h2>
         <ul class="bullet-list">
           <li>
-            <strong>1st Runner Up — CSE Project Show (UIU - Summer-25)</strong><br />
-           
-           
+            <strong
+              >1st Runner Up - CSE Project Show (Summer 2025), SAD-Lab,
+              UIU</strong
+            >
           </li>
-          <li>Java Basic Certificate — HackerRank (2023)</li>
+          <li>
+            C/C++, Java - HackerRank (2023); Dart - Udemy (2024); Flutter -
+            Udemy (2025)
+          </li>
         </ul>
       </section>
       <section class="section">
@@ -488,7 +473,6 @@
               >leetcode.com/u/OTjQKVxs6f</a
             >
           </li>
-          <li><strong>Codeforces</strong> and other platforms</li>
         </ul>
       </section>
       <section class="section">
